@@ -1,0 +1,45 @@
+<form class="form-container" (submit)="onSubmit()">
+  <div class="form-row">
+    <label class="form-label">
+      First Name:
+      <input class="form-input" type="text" name="firstName" [(ngModel)]="firstName" required>
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label class="form-label">
+      Last Name:
+      <input class="form-input" type="text" name="lastName" [(ngModel)]="lastName" required>
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label class="form-label">
+      Email:
+      <input class="form-input" type="email" name="email" [(ngModel)]="email" required>
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label class="form-label">
+      Date of Birth:
+      <input class="form-input" type="date" name="dob" [(ngModel)]="dob" required>
+    </label>
+  </div>
+  
+  <div class="form-row">
+    <label class="form-label">
+      Phone:
+      <input class="form-input" type="tel" name="phone" [(ngModel)]="phone" required>
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label class="form-label">
+      Hobby:
+      <input class="form-input" type="text" name="hobby" [(ngModel)]="hobby" required>
+    </label>
+  </div>
+
+  <button class="form-button" type="submit">Submit</button>
+</form>
