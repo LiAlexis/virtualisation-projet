@@ -19,7 +19,7 @@ spec:
         - containerPort: 3000
         env:
         - name: PGHOST
-          value: postgres
+          value: postgres-service
         - name: PGUSER
           value: myuser
         - name: PGDATABASE
@@ -38,4 +38,4 @@ spec:
   - name: http
     port: 3000
     targetPort: 80
-  type: NodePort
+  type: ClusterIP

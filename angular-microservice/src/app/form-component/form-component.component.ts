@@ -34,7 +34,7 @@ export class FormComponentComponent {
       hobby: this.hobby
     };
 
-    this.http.post('http://express-microservice:3000/data', data)
+    this.http.post('http://form.default/exp/data', data)
       .subscribe(() => {
         alert('Data submitted successfully');
         this.firstName = '';
